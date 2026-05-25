@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Direito Ambiental</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background:#f3f3f3;
+        color:#666;
+        line-height:1.7;
+    }
+
+    /* TOPO */
+    .topo{
+        width:100%;
+        background:#2e6b57;
+        padding:40px 20px;
+        text-align:center;
+        color:white;
+        position:relative;
+        overflow:hidden;
+    }
+
+    .topo::before{
+        content:'';
+        position:absolute;
+        inset:0;
+        background:
+        linear-gradient(135deg, rgba(255,255,255,0.04) 25%, transparent 25%) -50px 0/100px 100px,
+        linear-gradient(225deg, rgba(255,255,255,0.04) 25%, transparent 25%) -50px 0/100px 100px;
+        opacity:.4;
+    }
+
+    .topo h1{
+        position:relative;
+        z-index:2;
+        font-size:38px;
+        letter-spacing:1px;
+    }
+
+    /* CONTAINER */
+    .container{
+        width:100%;
+        max-width:1200px;
+        margin:auto;
+        padding:50px 20px;
+        display:flex;
+        gap:40px;
+        align-items:flex-start;
+    }
+
+    /* CONTEUDO */
+    .conteudo{
+        flex:1;
+    }
+
+    .titulo-imagem{
+        background:#2e6b57;
+        color:white;
+        text-align:center;
+        padding:14px;
+        font-size:42px;
+        font-weight:bold;
+    }
+
+    .imagem{
+        width:100%;
+        height:420px;
+        background:#d9d9d9;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:#888;
+        font-size:22px;
+    }
+
+    .imagem img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        display:block;
+    }
+
+    h2{
+        margin-top:40px;
+        margin-bottom:15px;
+        font-size:22px;
+        color:#444;
+    }
+
+    h3{
+        margin-top:25px;
+        margin-bottom:10px;
+        color:#444;
+        font-size:18px;
+    }
+
+    p{
+        margin-bottom:15px;
+    }
+
+    ul{
+        padding-left:20px;
+        margin-bottom:20px;
+    }
+
+    li{
+        margin-bottom:8px;
+    }
+
+    /* BOTAO */
+    .btn-whatsapp{
+        display:inline-flex;
+        align-items:center;
+        gap:10px;
+        background:#3f7c66;
+        color:white;
+        text-decoration:none;
+        padding:14px 24px;
+        border-radius:40px;
+        margin-top:20px;
+        font-weight:bold;
+        transition:.3s;
+    }
+
+    .btn-whatsapp:hover{
+        transform:translateY(-2px);
+        background:#2c5d4a;
+    }
+
+    /* SIDEBAR */
+    .sidebar{
+        width:300px;
+    }
+
+    .box{
+        border:1px solid #b9b9b9;
+        background:white;
+    }
+
+    .box-titulo{
+        background:#2e6b57;
+        color:white;
+        text-align:center;
+        padding:15px;
+        font-weight:bold;
+        font-size:18px;
+    }
+
+    .menu{
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+
+    .menu li{
+        border-top:1px solid #cfcfcf;
+    }
+
+    .menu a{
+        display:block;
+        padding:18px;
+        text-align:center;
+        text-decoration:none;
+        color:#2e6b57;
+        font-weight:bold;
+        transition:.3s;
+    }
+
+    .menu a:hover{
+        background:#f0f0f0;
+    }
+
+    /* RESPONSIVO */
+    @media(max-width:900px){
+
+        .container{
+            flex-direction:column;
+        }
+
+        .sidebar{
+            width:100%;
+        }
+
+        .titulo-imagem{
+            font-size:28px;
+        }
+
+        .topo h1{
+            font-size:28px;
+        }
+
+        .imagem{
+            height:280px;
+        }
+    }
+
+    @media(max-width:600px){
+
+        .container{
+            padding:30px 15px;
+        }
+
+        .titulo-imagem{
+            font-size:22px;
+            padding:12px;
+        }
+
+        .topo{
+            padding:30px 15px;
+        }
+
+        .topo h1{
+            font-size:22px;
+        }
+
+        .imagem{
+            height:220px;
+        }
+
+        h2{
+            font-size:20px;
+        }
+
+        h3{
+            font-size:17px;
+        }
+
+        body{
+            font-size:15px;
+        }
+
+        .btn-whatsapp{
+            width:100%;
+            justify-content:center;
+            text-align:center;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- TOPO -->
+<header class="topo">
+    <h1>DIREITO AMBIENTAL</h1>
+</header>
+
+<!-- CONTAINER -->
+<div class="container">
+
+    <!-- CONTEUDO -->
+    <main class="conteudo">
+
+        <div class="titulo-imagem">
+            DIREITO AMBIENTAL
+        </div>
+
+        <div class="imagem">
+        
+        <img src="img/direito ambietal.jpg" alt=""> 
+        </div>
+
+        <h2>ATUAÇÃO EM QUESTÕES AMBIENTAIS</h2>
+
+        <p>
+            Nossa equipe oferece suporte jurídico completo em demandas ambientais para empresas, produtores rurais e pessoas físicas.
+        </p>
+
+        <h3>Consultoria Ambiental</h3>
+
+        <ul>
+            <li>Orientação preventiva em legislação ambiental;</li>
+            <li>Regularização ambiental de propriedades e empresas;</li>
+            <li>Assessoria em licenciamento ambiental;</li>
+            <li>Análise de riscos ambientais;</li>
+            <li>Consultoria para atividades potencialmente poluidoras;</li>
+            <li>Acompanhamento junto aos órgãos ambientais.</li>
+        </ul>
+
+        <h3>Defesa Administrativa e Judicial</h3>
+
+        <ul>
+            <li>Defesa em autos de infração ambiental;</li>
+            <li>Atuação em processos administrativos;</li>
+            <li>Defesa em ações civis públicas;</li>
+            <li>Atuação em embargos e multas ambientais;</li>
+            <li>Representação perante órgãos fiscalizadores;</li>
+            <li>Recursos e medidas judiciais ambientais.</li>
+        </ul>
+
+        <h3>Licenciamento e Regularização</h3>
+
+        <ul>
+            <li>Licenciamento ambiental urbano e rural;</li>
+            <li>Cadastro Ambiental Rural (CAR);</li>
+            <li>Regularização de áreas de preservação;</li>
+            <li>Reserva legal e recuperação ambiental;</li>
+            <li>Georreferenciamento e documentação técnica;</li>
+            <li>Assessoria em compensação ambiental.</li>
+        </ul>
+
+        <h2>ATUAÇÃO PARA EMPRESAS E PRODUTORES</h2>
+
+        <p>
+            Atuamos na prevenção de passivos ambientais e na proteção jurídica de atividades econômicas.
+        </p>
+
+        <ul>
+            <li>Compliance ambiental;</li>
+            <li>Auditoria ambiental;</li>
+            <li>Gestão de riscos ambientais;</li>
+            <li>Planejamento sustentável;</li>
+            <li>Defesa em crimes ambientais;</li>
+            <li>Responsabilidade civil ambiental.</li>
+        </ul>
+
+        <h3>Planejamento e Sustentabilidade</h3>
+
+        <ul>
+            <li>Estruturação de políticas ambientais;</li>
+            <li>Consultoria em ESG;</li>
+            <li>Projetos de sustentabilidade;</li>
+            <li>Assessoria em energia renovável;</li>
+            <li>Negociação de termos de ajustamento de conduta;</li>
+            <li>Mediação de conflitos ambientais.</li>
+        </ul>
+
+        <a href="https://wa.me/556596689020" class="btn-whatsapp">
+             Quero orientação jurídica
+        </a>
+
+    </main>
+
+   <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="box">
+
+            <div class="box-titulo">
+                ÁREAS DE ATUAÇÃO
+            </div>
+
+             <ul class="menu">
+                <li><a href="direitocontratual.html">CONTRATUAL</a></li>
+                <li><a href="direitoadministrativo.html">ADMINISTRATIVO</a></li>
+                <li><a href="direitoambiental.html">AMBIENTAL</a></li>
+                <li><a href="direitodoagronegócio.html">AGRONEGÓCIO</a></li>
+                <li><a href="index.html">Voltar para página inicial</a><li></li>
+            </ul>
+
+        </div>
+
+    </aside>
+
+</div>
+
+<script>
+
+    // SCROLL SUAVE
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const destino = document.querySelector(this.getAttribute('href'));
+
+            if(destino){
+                destino.scrollIntoView({
+                    behavior:'smooth'
+                });
+            }
+        });
+    });
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Direito do Agronegócio</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+        background:#f3f3f3;
+        color:#666;
+        line-height:1.7;
+    }
+
+    /* TOPO */
+    .topo{
+        width:100%;
+        background:#2f5d32;
+        padding:40px 20px;
+        text-align:center;
+        color:white;
+        position:relative;
+        overflow:hidden;
+    }
+
+    .topo::before{
+        content:'';
+        position:absolute;
+        inset:0;
+        background:
+        linear-gradient(135deg, rgba(255,255,255,0.04) 25%, transparent 25%) -50px 0/100px 100px,
+        linear-gradient(225deg, rgba(255,255,255,0.04) 25%, transparent 25%) -50px 0/100px 100px;
+        opacity:.4;
+    }
+
+    .topo h1{
+        position:relative;
+        z-index:2;
+        font-size:38px;
+        letter-spacing:1px;
+    }
+
+    /* CONTAINER */
+    .container{
+        width:100%;
+        max-width:1200px;
+        margin:auto;
+        padding:50px 20px;
+        display:flex;
+        gap:40px;
+        align-items:flex-start;
+    }
+
+    /* CONTEUDO */
+    .conteudo{
+        flex:1;
+    }
+
+    .titulo-imagem{
+        background:#2f5d32;
+        color:white;
+        text-align:center;
+        padding:14px;
+        font-size:42px;
+        font-weight:bold;
+    }
+
+    .imagem{
+        width:100%;
+        height:420px;
+        background:#d9d9d9;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        color:#888;
+        font-size:22px;
+    }
+
+    .imagem img{
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        display:block;
+    }
+
+    h2{
+        margin-top:40px;
+        margin-bottom:15px;
+        font-size:22px;
+        color:#444;
+    }
+
+    h3{
+        margin-top:25px;
+        margin-bottom:10px;
+        color:#444;
+        font-size:18px;
+    }
+
+    p{
+        margin-bottom:15px;
+    }
+
+    ul{
+        padding-left:20px;
+        margin-bottom:20px;
+    }
+
+    li{
+        margin-bottom:8px;
+    }
+
+    /* BOTAO */
+    .btn-whatsapp{
+        display:inline-flex;
+        align-items:center;
+        gap:10px;
+        background:#3b6f3e;
+        color:white;
+        text-decoration:none;
+        padding:14px 24px;
+        border-radius:40px;
+        margin-top:20px;
+        font-weight:bold;
+        transition:.3s;
+    }
+
+    .btn-whatsapp:hover{
+        transform:translateY(-2px);
+        background:#28502b;
+    }
+
+    /* SIDEBAR */
+    .sidebar{
+        width:300px;
+    }
+
+    .box{
+        border:1px solid #b9b9b9;
+        background:white;
+    }
+
+    .box-titulo{
+        background:#2f5d32;
+        color:white;
+        text-align:center;
+        padding:15px;
+        font-weight:bold;
+        font-size:18px;
+    }
+
+    .menu{
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+
+    .menu li{
+        border-top:1px solid #cfcfcf;
+    }
+
+    .menu a{
+        display:block;
+        padding:18px;
+        text-align:center;
+        text-decoration:none;
+        color:#2f5d32;
+        font-weight:bold;
+        transition:.3s;
+    }
+
+    .menu a:hover{
+        background:#f0f0f0;
+    }
+
+    /* RESPONSIVO */
+    @media(max-width:900px){
+
+        .container{
+            flex-direction:column;
+        }
+
+        .sidebar{
+            width:100%;
+        }
+
+        .titulo-imagem{
+            font-size:28px;
+        }
+
+        .topo h1{
+            font-size:28px;
+        }
+
+        .imagem{
+            height:280px;
+        }
+    }
+
+    @media(max-width:600px){
+
+        .container{
+            padding:30px 15px;
+        }
+
+        .titulo-imagem{
+            font-size:22px;
+            padding:12px;
+        }
+
+        .topo{
+            padding:30px 15px;
+        }
+
+        .topo h1{
+            font-size:22px;
+        }
+
+        .imagem{
+            height:220px;
+        }
+
+        h2{
+            font-size:20px;
+        }
+
+        h3{
+            font-size:17px;
+        }
+
+        body{
+            font-size:15px;
+        }
+
+        .btn-whatsapp{
+            width:100%;
+            justify-content:center;
+            text-align:center;
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<!-- TOPO -->
+<header class="topo">
+    <h1>DIREITO DO AGRONEGÓCIO</h1>
+</header>
+
+<!-- CONTAINER -->
+<div class="container">
+
+    <!-- CONTEUDO -->
+    <main class="conteudo">
+
+        <div class="titulo-imagem">
+            AGRONEGÓCIO
+        </div>
+
+        <div class="imagem">
+             <img src="img/direito agro.jpg" alt=""> 
+        </div>
+
+        <h2>ATUAÇÃO PARA PRODUTORES RURAIS E EMPRESAS DO AGRO</h2>
+
+        <p>
+            Temos uma equipe preparada para atuar em demandas relacionadas ao agronegócio:
+        </p>
+
+        <h3>Consultoria Jurídica Rural</h3>
+
+        <ul>
+            <li>Elaboração e revisão de contratos rurais;</li>
+            <li>Contratos de arrendamento e parceria agrícola;</li>
+            <li>Assessoria em compra e venda de propriedades rurais;</li>
+            <li>Regularização documental e fundiária;</li>
+            <li>Planejamento jurídico para atividades agrícolas e pecuárias;</li>
+            <li>Orientação preventiva para produtores rurais.</li>
+        </ul>
+
+        <h3>Defesa Judicial</h3>
+
+        <ul>
+            <li>Ações possessórias e disputas de terras;</li>
+            <li>Execuções e cobranças rurais;</li>
+            <li>Defesa em ações ambientais;</li>
+            <li>Litígios envolvendo contratos agrícolas;</li>
+            <li>Recuperação de crédito rural;</li>
+            <li>Atuação perante Tribunais e órgãos reguladores.</li>
+        </ul>
+
+        <h3>Crédito Rural e Financiamentos</h3>
+
+        <ul>
+            <li>Renegociação de dívidas rurais;</li>
+            <li>Assessoria em financiamentos agrícolas;</li>
+            <li>Análise de contratos bancários;</li>
+            <li>Defesa contra cobranças abusivas;</li>
+            <li>Planejamento financeiro rural.</li>
+        </ul>
+
+        <h2>ATUAÇÃO EM QUESTÕES AMBIENTAIS E FUNDIÁRIAS</h2>
+
+        <p>
+            Atuamos também na prevenção e solução de conflitos ambientais e fundiários.
+        </p>
+
+        <ul>
+            <li>Regularização ambiental rural;</li>
+            <li>Cadastro Ambiental Rural (CAR);</li>
+            <li>Reserva legal e áreas de preservação;</li>
+            <li>Licenciamento ambiental;</li>
+            <li>Defesa em autos de infração ambiental;</li>
+            <li>Georreferenciamento e regularização fundiária.</li>
+        </ul>
+
+        <h3>Planejamento Patrimonial</h3>
+
+        <ul>
+            <li>Proteção patrimonial rural;</li>
+            <li>Sucessão familiar no agronegócio;</li>
+            <li>Holding rural;</li>
+            <li>Estruturação societária;</li>
+            <li>Planejamento tributário para o agro.</li>
+        </ul>
+
+        <a href="https://wa.me/556596689020" class="btn-whatsapp">
+     Quero orientação jurídica
+        </a>
+
+    </main>
+
+  <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <div class="box">
+
+            <div class="box-titulo">
+                ÁREAS DE ATUAÇÃO
+            </div>
+
+            <ul class="menu">
+                <li><a href="direitocontratual.html">CONTRATUAL</a></li>
+                <li><a href="direitoadministrativo.html">ADMINISTRATIVO</a></li>
+                <li><a href="direitoambiental.html">AMBIENTAL</a></li>
+                <li><a href="direitodoagronegócio.html">AGRONEGÓCIO</a></li>
+                <li><a href="index.html">Voltar para página inicial</a><li></li>
+            </ul>
+
+        </div>
+
+    </aside>
+
+</div>
+
+<script>
+
+    // SCROLL SUAVE
+    document.querySelectorAll('a[href^="#"]').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            const destino = document.querySelector(this.getAttribute('href'));
+
+            if(destino){
+                destino.scrollIntoView({
+                    behavior:'smooth'
+                });
+            }
+        });
+    });
+
+</script>
+
+</body>
+</html>
