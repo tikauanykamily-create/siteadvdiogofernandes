@@ -107,3 +107,25 @@ form.addEventListener('submit', function(e){
   window.open(url, '_blank');
 
 });
+
+const slider = document.querySelector('.cards-artigos');
+const next = document.querySelector('.artigo-next');
+const prev = document.querySelector('.artigo-prev');
+
+if(slider && next && prev){
+
+  next.addEventListener('click', () => {
+    slider.scrollBy({
+      left: 400,
+      behavior: 'smooth'
+    });
+  });
+
+  prev.addEventListener('click', () => {
+    slider.scrollBy({
+      left: -400,
+      behavior: 'smooth'
+    });
+  });
+
+}
