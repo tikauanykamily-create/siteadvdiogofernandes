@@ -203,7 +203,7 @@ header{
 }
 
 .hero-text h6{
- font-size:1.7rem;
+ font-size:1.9rem;
   line-height:1.1;
   font-weight: 350;
   margin-bottom:30px;
@@ -740,7 +740,7 @@ footer{
  .hero{
 
 
-    background-image:url('img/imagem\ hero\ 3.jpg');
+    background-image:url('img/imagem\ hero\ \(3\).jpg');
     background-size:contain;
     background-repeat:no-repeat;
 
