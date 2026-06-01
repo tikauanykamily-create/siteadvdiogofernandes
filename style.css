@@ -172,7 +172,7 @@ header{
   width:100%;
   min-height:100vh;
   background:
-    url('img/banner\ hero.jpg') center/cover no-repeat;
+    url('img/banner\ 2.0.png') center/cover no-repeat;
 
   position:relative;
   display:flex;
@@ -194,13 +194,23 @@ header{
 }
 
 .hero-text h1{
- font-size:3.7rem;
+ font-size:2.9rem;
   line-height:1.1;
   font-weight: 350;
   margin-bottom:30px;
   font-family:'Cormorant Garamond', serif;
    font-weight:600;
 }
+
+.hero-text h6{
+ font-size:1.7rem;
+  line-height:1.1;
+  font-weight: 350;
+  margin-bottom:30px;
+  font-family:'Cormorant Garamond', serif;
+  font-weight:600;
+  color:#C8A140;
+} 
 
 .hero-text span{
   color:#C8A140;
